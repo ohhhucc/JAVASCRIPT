@@ -1,6 +1,4 @@
-let value = prompt("Введите число:");
-
-value = parseInt(value);
+let value = parseInt(prompt("Введите число:"));
 
 if (value <= 0) {
 	console.log(value);
