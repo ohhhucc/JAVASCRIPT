@@ -1,12 +1,12 @@
 let totalCash = prompt('Введите сумму наличных:');
 
-let watchesCount = prompt('Введите количество золотых часов:');
-let earringsCount = prompt('Введите количество сережек:');
+let watchesCount = parseInt(prompt('Введите количество золотых часов:'));
+let earringsCount = parseInt(prompt('Введите количество сережек:'));
 
-let unitCost = prompt('Введите стоимость одного украшения:');
+let unitCost = parseInt(prompt('Введите стоимость одного украшения:'));
 
-let watchesSum = parseInt(unitCost * watchesCount);
-let earringsSum = parseInt(unitCost * earringsCount);
+let watchesSum = unitCost * watchesCount;
+let earringsSum = unitCost * earringsCount;
 
 console.log(totalCash + " >= " + watchesSum + " + " + earringsSum + " ?");
 
